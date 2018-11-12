@@ -1,0 +1,74 @@
+import java.util.*;
+
+/**
+ * @author Javier Octavio
+ */
+public class Principal {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        System.out.println("Numero del Mes del Año");
+        int iMes;
+        
+        iMes = input.nextInt();
+        while (iMes > 12) {
+            System.out.println("El Mes no Existe, Escriba Otro");
+            iMes = input.nextInt();
+        }
+        while (iMes < 1) {
+            System.out.println("El Mes no Existe, Escriba Otro");
+            iMes = input.nextInt();
+        }
+        if (iMes == 1) {
+            System.out.println("Es ENERO");
+        } else {
+            if (iMes == 2) {
+                System.out.println("Es FEBRERO");
+            } else {
+                if (iMes == 3) {
+                    System.out.println("Es MARZO");
+                } else {
+                    if (iMes == 4) {
+                        System.out.println("Es ABRIL");
+                    } else {
+                        if (iMes == 5) {
+                            System.out.println("Es MAYO");
+                        } else {
+                            if (iMes == 6) {
+                                System.out.println("Es JUNIO");
+                            } else {
+                                if (iMes == 7) {
+                                    System.out.println("Es JULIO");
+                                } else {
+                                    if (iMes == 8) {
+                                        System.out.println("Es AGOSTO");
+                                    } else {
+                                        if (iMes == 9) {
+                                            System.out.println("Es SEPTIEMBRE");
+                                        } else {
+                                            if (iMes == 10) {
+                                                System.out.println("Es OCTUBRE");
+                                            } else {
+                                                if (iMes == 11) {
+                                                    System.out.println("Es NOVIEMBRE");
+                                                } else {
+                                                    if (iMes == 12) {
+                                                        System.out.println("Es DICIEMBRE");
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
