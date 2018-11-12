@@ -1,0 +1,22 @@
+import java.util.Scanner;
+/**
+ * @author Javier Octavio
+ */
+public class Principal {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        System.out.println("Adivina el número");
+        int iResult = input.nextInt();
+        int iNum = (int)(Math.random() * 10) + 1;
+        while(iResult == iNum){
+            System.out.println("Felicidades, Ganaste");
+        }
+        System.out.println("Perdiste");
+    }
+    
+}
