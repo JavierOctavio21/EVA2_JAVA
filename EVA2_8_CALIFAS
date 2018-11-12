@@ -1,0 +1,36 @@
+import java.util.*;
+/**
+ * @author Javier Octavio
+ */
+public class Principal {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        String iCalifa;
+        System.out.println("¿Qué Calificación Sacaste?");
+        iCalifa = input.nextLine();
+        switch(iCalifa){
+            //OPCIONES
+            case "A":
+                System.out.println("Sacaste 100");
+                break;
+            case "B":
+                System.out.println("Sacaste 90");
+                break;
+            case "C":
+                System.out.println("Sacaste 80");
+                break;
+            case "D":
+                System.out.println("Sacaste 70");
+                break;
+            case "F":
+                System.out.println("Sacaste 60");
+                break;
+            default:
+                System.out.println("Fuera de Rango");
+            }
+        }
+    }
