@@ -1,0 +1,29 @@
+import java.util.Scanner;
+/**
+ * @author Javier Octavio
+ */
+public class Principal {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        int iSuma = 0;
+        System.out.println("La Primera Edad");
+        iSuma += input.nextInt();
+        System.out.println("La Segunda Edad");
+        iSuma += input.nextInt();
+        System.out.println("La Tercera Edad");
+        iSuma += input.nextInt();
+        System.out.println("La Cuarta Edad");
+        iSuma += input.nextInt();
+        System.out.println("La Quinta Edad");
+        iSuma += input.nextInt();
+        
+        double rMedia = (double)iSuma / 5;
+        System.out.println("La suma es: " + iSuma);
+        System.out.println("La media es: " + rMedia);
+    }
+    
+}
