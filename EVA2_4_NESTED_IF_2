@@ -1,0 +1,39 @@
+import java.util.*;
+/**
+ * @author Javier Octavio
+ */
+public class Principal {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        System.out.println("¿Cual es tu Calificación?");
+        int iCalifa;
+        
+        iCalifa = input.nextInt();
+        while (iCalifa > 100) {
+            System.out.println("Esa calificación esta fuera de Rango");
+            iCalifa = input.nextInt();
+        }
+        if (iCalifa == 100) {
+            System.out.println("Sacaste A, Felicidades");
+        } else {
+            if ((iCalifa >= 90) && (iCalifa<100)) {
+                System.out.println("Sacaste B, Pasaste");
+            } else {
+                if ((iCalifa >= 80) && (iCalifa<90)) {
+                    System.out.println("Sacaste C, Pasaste");
+                } else {
+                    if ((iCalifa >= 70) && (iCalifa<80)) {
+                        System.out.println("Sacaste D, Pansaste");
+                    } else {
+                        System.out.println("Sacaste F, Reprobaste");
+                    }
+                }
+            }
+        }
+    }
+}
