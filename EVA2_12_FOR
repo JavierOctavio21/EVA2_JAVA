@@ -1,0 +1,19 @@
+/**
+ * @author Javier Octavio
+ */
+public class Principal {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        //FOR
+        int i;
+        for (i = 1000; i >= 1; i--) {
+            System.out.println(i + " Javier Octavio Ramírez Arroyos");
+        }
+        System.out.println(i);
+    }
+    
+}
